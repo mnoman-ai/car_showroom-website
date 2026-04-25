@@ -16,74 +16,81 @@ body {
 
 }
 
-/* ================= NAVBAR ================= */
+/* ================= PREMIUM NAVBAR ================= */
 
 .navbar {
+
+    position: fixed;
+
+    width: 100%;
+
+    top: 0;
+
+    z-index: 1000;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
-    padding: 20px 40px;
+    padding: 20px 50px;
 
-    background-color: black;
+    background: rgba(0,0,0,0.4);
 
-    position: sticky;
-    top: 0;
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.navbar h1 {
-    color: red;
+.logo {
+
     font-size: 32px;
-}
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
+    font-weight: bold;
 
-.navbar a {
-    text-decoration: none;
     color: white;
-    font-size: 18px;
+
+    letter-spacing: 3px;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 16px;
 
     transition: 0.3s;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
+
     color: red;
 }
 
-.search-section {
-
-    text-align: center;
-
-    margin-top: 40px;
-}
-
-.search-section input {
-
-    width: 60%;
-
-    padding: 15px;
-
-    border: none;
-
-    border-radius: 10px;
-
-    font-size: 18px;
-}
-
-/* ================= HERO SECTION ================= */
+/* ================= PREMIUM HERO ================= */
 
 .hero {
+
+    position: relative;
 
     min-height: 100vh;
 
     background:
     linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     ),
     url('assets/images/hero.jpg');
 
@@ -91,20 +98,121 @@ body {
 
     background-position: center;
 
-    background-repeat: no-repeat;
-
     display: flex;
 
-    flex-direction: column;
+    align-items: center;
 
     justify-content: center;
-
-    align-items: center;
 
     text-align: center;
 
     padding: 20px;
 }
+
+.hero-content {
+
+    max-width: 900px;
+
+    z-index: 2;
+}
+
+.hero-tag {
+
+    color: red;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.hero h1 {
+
+    font-size: 90px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+
+    color: red;
+}
+
+.hero-description {
+
+    font-size: 20px;
+
+    color: #ccc;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.primary-btn {
+
+    padding: 16px 40px;
+
+    border: none;
+
+    background: red;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+
+    background: darkred;
+
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+
+    padding: 16px 40px;
+
+    border: 1px solid white;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+
+    background: white;
+
+    color: black;
+}
+
+
+  
 /* ================= CAR SECTION ================= */
 
 .cars {
@@ -190,7 +298,27 @@ body {
 
 @media (max-width: 768px) {
 
-    .navbar {
+.hero h1 {
+
+    font-size: 50px;
+}
+
+.hero-description {
+
+    font-size: 16px;
+}
+
+.navbar {
+
+    padding: 20px;
+}
+
+.nav-links {
+
+    gap: 15px;
+} 
+
+   .navbar {
 
         flex-direction: column;
 
@@ -265,4 +393,82 @@ body {
     color: #ccc;
 
     margin-top: 10px;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+
+    padding: 80px 20px;
+
+    background: #080808;
+
+    text-align: center;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+}
+
+
+.footer-logo {
+
+    font-size: 40px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+
+.footer-text {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #888;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+
+.footer-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+
+    color: red;
+}
+
+
+.footer-copy {
+
+    color: #666;
+
+    font-size: 14px;
 }

@@ -1,0 +1,365 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background: #0a0a0a;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background: rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+
+.logo {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    color: red;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 120px 20px 60px;
+}
+
+
+.hero p {
+
+    color: red;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+
+    font-size: 80px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h3 {
+
+    max-width: 700px;
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+    font-weight: normal;
+}
+
+
+/* ================= FORM ================= */
+
+.form-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 60px 20px 100px;
+}
+
+
+form {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+input,
+select,
+textarea {
+
+    padding: 20px;
+
+    background: #111;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    color: white;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+textarea {
+
+    min-height: 160px;
+
+    resize: vertical;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color:
+    rgba(255,0,0,0.5);
+}
+
+
+/* ================= BUTTON ================= */
+
+button {
+
+    padding: 20px;
+
+    border: none;
+
+    background: red;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+
+    background: darkred;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= SUCCESS ================= */
+
+.success-message {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+
+.success-message h2 {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+.success-message p {
+
+    color: #aaa;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.8;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 20px;
+    }
+
+    .nav-links {
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+
+        font-size: 50px;
+    }
+
+    .hero h3 {
+
+        font-size: 16px;
+    }
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+
+    padding: 80px 20px;
+
+    background: #080808;
+
+    text-align: center;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+}
+
+
+.footer-logo {
+
+    font-size: 40px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+
+.footer-text {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #888;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+
+.footer-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+
+    color: red;
+}
+
+
+.footer-copy {
+
+    color: #666;
+
+    font-size: 14px;
+}
