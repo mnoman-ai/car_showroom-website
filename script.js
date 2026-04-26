@@ -1,29 +1,55 @@
 function showAlert() {
     alert("Welcome to LUXE Cars!");
 }
+// Premium Collection Data
 
-// Car Data
 let cars = [
 
     {
-        name: "BMW",
-        price: "₹50L",
-        img: "assets/images/bmw.jpg"
+
+        name: "BMW M4 Competition",
+
+        price: "₹1.53 Cr",
+
+        img: "assets/images/bmw.jpg",
+
+        tagline:
+        "Precision engineered performance."
+
     },
 
-    {
-        name: "Audi",
-        price: "₹60L",
-        img: "assets/images/audi.jpg"
-    },
+
 
     {
-        name: "Mercedes",
-        price: "₹70L",
-        img: "assets/images/merc.jpg"
+
+        name: "Audi RS7 Sportback",
+
+        price: "₹2.24 Cr",
+
+        img: "assets/images/audi.jpg",
+
+        tagline:
+        "Executive power in motion."
+
+    },
+
+
+
+    {
+
+        name: "Mercedes AMG GT 63",
+
+        price: "₹3.00 Cr",
+
+        img: "assets/images/merc.jpg",
+
+        tagline:
+        "Luxury fused with domination."
+
     }
 
 ];
+
 
 // DOM Manipulation
 let container = document.getElementById("carList");

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,7 +12,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+font-family: 'Poppins', sans-serif;    
     background-color: #111;
     color: white;
     overflow-x: hidden;
@@ -44,6 +47,8 @@ body {
 }
 
 .logo {
+    
+    font-family: 'Playfair Display', serif;
 
     font-size: 32px;
 
@@ -82,6 +87,9 @@ body {
 /* ================= PREMIUM HERO ================= */
 
 .hero {
+       
+
+
 
     position: relative;
 
@@ -129,6 +137,7 @@ body {
 
 .hero h1 {
 
+    font-family: 'Playfair Display', serif;
     font-size: 90px;
 
     line-height: 1.1;
@@ -165,7 +174,14 @@ body {
 
 .primary-btn {
 
-    padding: 16px 40px;
+    
+border-radius: 50px;
+
+font-weight: 600;
+
+letter-spacing: 1px;
+
+padding: 16px 40px;
 
     border: none;
 
@@ -206,6 +222,12 @@ body {
 
 .secondary-btn:hover {
 
+
+    border-radius: 50px;
+
+font-weight: 600;
+
+letter-spacing: 1px;
     background: white;
 
     color: black;
