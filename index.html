@@ -1,238 +1,319 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>LUXE Cars</title>
+    <title>
+        LUXE Motors
+    </title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <header>
 
-<header>
+        <nav class="navbar">
 
-    <nav class="navbar">
+            <div class="logo">
 
-        <div class="logo">
-            LUXE
-        </div>
+                LUXE
 
-        <ul class="nav-links">
-
-            <li>
-
-                <a href="index.html">
-
-                    Home
-
-                </a>
-
-            </li>
+            </div>
 
 
-            <li>
+            <ul class="nav-links">
 
-                <a href="collection.html">
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
 
-                    Collection
+                <li>
+                    <a href="#cars">
+                        Cars
+                    </a>
+                </li>
 
-                </a>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
 
-            </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
 
 
-            <li>
+    <section
+        class="hero"
 
-                <a href="about.html">
+        id="home">
 
-                    About
+        <h3>
 
-                </a>
-
-            </li>
-
-
-            <li>
-
-                <a href="test-drive.html">
-
-                    Test Drive
-
-                </a>
-
-            </li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-    <!-- ================= HERO SECTION ================= -->
-
-    <section class="hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <p class="hero-tag">
             PREMIUM LUXURY EXPERIENCE
-        </p>
 
-        <h1>
-            Drive Beyond
-            <span>Ordinary</span>
+        </h3>
+
+
+        <h1 id="mainHeading">
+
+            Drive Beyond Ordinary
+
         </h1>
 
-        <p class="hero-description">
 
-            Discover world-class luxury cars
-            crafted for performance, elegance,
-            and prestige.
+        <p>
+
+            Discover world-class luxury
+            cars crafted for performance,
+            elegance, and prestige.
 
         </p>
+
 
         <div class="hero-buttons">
 
-           <a href="collection.html">
+            <button
+                class="primary-btn"
 
-    <button class="primary-btn">
+                onclick="showMessage()">
 
-        Explore Collection
+                Explore Collection
 
-    </button>
+            </button>
 
-</a>
-          <a href="test-drive.html">
 
-    <button class="secondary-btn">
+            <button
+                class="secondary-btn">
 
-        Book Test Drive
+                Book Test Drive
 
-    </button>
+            </button>
 
-</a>
         </div>
 
-    </div>
+    </section>
 
-</section>
 
-    <!-- ================= FEATURED CARS ================= -->
+    <section
+        class="cars-section"
 
-    <section>
+        id="cars">
 
-        <h2
-            style="
-                text-align:center;
-                margin-top:50px;
-                font-size:40px;
-            "
-        >
+        <h2>
+
             Performance Collection
+
         </h2>
 
+
+        <div class="cars-container">
+
+            <!-- CARD 1 -->
+
+            <div class="car-card">
+
+                <img
+                    src="assets/images/bmw.jpg"
+
+                    alt="BMW"
+                >
+
+                <h3>
+
+                    BMW M4 Competition
+
+                </h3>
+
+                <p class="price">
+
+                    ₹1.53 Cr
+
+                </p>
+
+                <p>
+
+                    Precision engineered
+                    performance machine.
+
+                </p>
+
+            </div>
+
+
+
+             <div class="car-card">
+
+                <img
+                    src="assets/images/audi.jpg"
+
+                    alt="Audi"
+                >
+
+                <h3>
+
+                    Audi RS7 Sportback
+
+                </h3>
+
+                <p class="price">
+
+                    ₹2.24 Cr
+
+                </p>
+
+                <p>
+
+                    Executive luxury with
+                    aggressive performance.
+
+                </p>
+
+            </div>
+
+           <div class="car-card">
+
+                <img
+                    src="assets/images/merc.jpg"
+
+                    alt="Mercedes"
+                >
+
+                <h3>
+
+                    Mercedes AMG GT 63
+
+                </h3>
+
+                <p class="price">
+
+                    ₹3.00 Cr
+
+                </p>
+
+                <p>
+
+                    Luxury fused with
+                    dominating power.
+
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
 
+    <section
+        class="about-section"
 
-    <!-- ================= CAR LIST ================= -->
+        id="about">
 
-    <section class="cars" id="carList">
+        <h2>
 
-        <!-- JavaScript se cards load honge -->
+            About LUXE Motors
 
-    </section>
+        </h2>
 
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer
-        style="
-            text-align:center;
-            padding:20px;
-            background:black;
-            margin-top:40px;
-        "
-    >
 
         <p>
-            © 2026 LUXE Cars | All Rights Reserved
+
+            LUXE Motors is a premium
+            luxury car showroom focused
+            on performance vehicles,
+            refined engineering,
+            and elite automotive design.
+
+        </p>
+
+    </section>
+
+    <section
+        class="contact-section"
+
+        id="contact">
+
+        <h2>
+
+            Contact Us
+
+        </h2>
+
+
+        <form>
+
+            <input
+                type="text"
+
+                placeholder="Enter Name"
+
+                required
+            >
+
+
+            <input
+                type="email"
+
+                placeholder="Enter Email"
+
+                required
+            >
+
+
+            <textarea
+
+                placeholder=
+                "Your Message"
+
+            ></textarea>
+
+
+            <button type="submit">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <p>
+
+            © 2026 LUXE Motors
+
         </p>
 
     </footer>
 
 
 
-    <!-- ================= JAVASCRIPT ================= -->
-
     <script src="script.js"></script>
-
-
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="footer-logo">
-
-        LUXE Motors
-
-    </div>
-
-
-    <p class="footer-text">
-
-        Curating elite automotive
-        experiences defined by
-        performance, luxury,
-        and precision engineering.
-
-    </p>
-
-
-    <div class="footer-links">
-
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="collection.html">
-            Collection
-        </a>
-
-        <a href="about.html">
-            About
-        </a>
-
-        <a href="test-drive.html">
-            Test Drive
-        </a>
-
-    </div>
-
-
-    <p class="footer-copy">
-
-        © 2026 LUXE Motors.
-        All rights reserved.
-
-    </p>
-
-</footer>
-
-
 
 </body>
 

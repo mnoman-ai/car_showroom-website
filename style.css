@@ -1,35 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-
-html {
-    scroll-behavior: smooth;
-}
 
 * {
+
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 }
 
-body {
-font-family: 'Poppins', sans-serif;    
-    background-color: #111;
-    color: white;
-    overflow-x: hidden;
 
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: #0a0a0a;
+
+    color: white;
+
+    line-height: 1.6;
 }
 
-/* ================= PREMIUM NAVBAR ================= */
-
 .navbar {
-
-    position: fixed;
-
-    width: 100%;
-
-    top: 0;
-
-    z-index: 1000;
 
     display: flex;
 
@@ -39,34 +31,33 @@ font-family: 'Poppins', sans-serif;
 
     padding: 20px 50px;
 
-    background: rgba(0,0,0,0.4);
+    background: #111;
 
-    backdrop-filter: blur(10px);
+    position: sticky;
 
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    top: 0;
 }
 
+
 .logo {
-    
-    font-family: 'Playfair Display', serif;
 
-    font-size: 32px;
+    font-size: 30px;
 
-    font-weight: bold;
-
-    color: white;
+    font-weight: 600;
 
     letter-spacing: 3px;
 }
+
 
 .nav-links {
 
     display: flex;
 
-    gap: 30px;
-
     list-style: none;
+
+    gap: 30px;
 }
+
 
 .nav-links a {
 
@@ -74,114 +65,282 @@ font-family: 'Poppins', sans-serif;
 
     color: white;
 
-    font-size: 16px;
-
     transition: 0.3s;
 }
+
 
 .nav-links a:hover {
 
     color: red;
 }
 
-/* ================= PREMIUM HERO ================= */
-
 .hero {
-       
 
-
-
-    position: relative;
-
-    min-height: 100vh;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.75),
-        rgba(0,0,0,0.75)
-    ),
-    url('assets/images/hero.jpg');
-
-    background-size: cover;
-
-    background-position: center;
+    height: 90vh;
 
     display: flex;
 
-    align-items: center;
+    flex-direction: column;
 
     justify-content: center;
+
+    align-items: center;
 
     text-align: center;
 
     padding: 20px;
 }
 
-.hero-content {
 
-    max-width: 900px;
-
-    z-index: 2;
-}
-
-.hero-tag {
+.hero h3 {
 
     color: red;
 
-    letter-spacing: 4px;
-
     margin-bottom: 20px;
 
-    font-size: 14px;
+    letter-spacing: 3px;
 }
+
 
 .hero h1 {
 
-    font-family: 'Playfair Display', serif;
-    font-size: 90px;
-
-    line-height: 1.1;
+    font-size: 70px;
 
     margin-bottom: 20px;
 }
 
-.hero h1 span {
 
-    color: red;
-}
+.hero p {
 
-.hero-description {
+    max-width: 700px;
 
-    font-size: 20px;
-
-    color: #ccc;
-
-    line-height: 1.8;
+    color: #bbb;
 
     margin-bottom: 40px;
 }
+
 
 .hero-buttons {
 
     display: flex;
 
+    gap: 20px;
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.primary-btn {
+
+    background: red;
+
+    color: white;
+}
+
+
+.secondary-btn {
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid white;
+}
+
+
+.primary-btn:hover {
+
+    background: darkred;
+
+    transform: translateY(-5px);
+}
+
+
+.secondary-btn:hover {
+
+    background: white;
+
+    color: black;
+
+    transform: translateY(-5px);
+}
+
+.cars-section {
+
+    padding: 80px 40px;
+
+    text-align: center;
+}
+
+
+.cars-section h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 50px;
+}
+
+
+.cars-container {
+
+    display: flex;
+
     justify-content: center;
 
-    gap: 20px;
+    gap: 30px;
 
     flex-wrap: wrap;
 }
 
-.primary-btn {
 
-    
-border-radius: 50px;
+.car-card {
 
-font-weight: 600;
+    width: 320px;
 
-letter-spacing: 1px;
+    background: #111;
 
-padding: 16px 40px;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+
+.car-card:hover {
+
+    transform: translateY(-10px);
+}
+
+
+.car-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+
+.car-card h3 {
+
+    margin: 20px 0 10px;
+}
+
+
+.price {
+
+    color: red;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+.car-card p {
+
+    padding: 0 20px 20px;
+
+    color: #bbb;
+}
+
+.about-section {
+
+    padding: 80px 40px;
+
+    text-align: center;
+}
+
+
+.about-section h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 30px;
+}
+
+
+.about-section p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #bbb;
+}
+
+
+.contact-section {
+
+    padding: 80px 40px;
+
+    text-align: center;
+}
+
+
+.contact-section h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 40px;
+}
+
+
+form {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+input,
+textarea {
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #111;
+
+    color: white;
+}
+
+
+textarea {
+
+    height: 150px;
+}
+
+
+form button {
+
+    padding: 15px;
 
     border: none;
 
@@ -189,308 +348,51 @@ padding: 16px 40px;
 
     color: white;
 
-    font-size: 16px;
+    border-radius: 30px;
 
     cursor: pointer;
 
     transition: 0.3s;
 }
 
-.primary-btn:hover {
+
+form button:hover {
 
     background: darkred;
-
-    transform: translateY(-3px);
 }
 
-.secondary-btn {
-
-    padding: 16px 40px;
-
-    border: 1px solid white;
-
-    background: transparent;
-
-    color: white;
-
-    font-size: 16px;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.secondary-btn:hover {
-
-
-    border-radius: 50px;
-
-font-weight: 600;
-
-letter-spacing: 1px;
-    background: white;
-
-    color: black;
-}
-
-
-  
-/* ================= CAR SECTION ================= */
-
-.cars {
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 30px;
-
-    padding: 60px 20px;
-}
-
-/* ================= CARD ================= */
-
-.card {
-
-    width: 300px;
-
-    background-color: #1c1c1c;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    transition: 0.3s;
-
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-
-    width: 100%;
-
-    height: 220px;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-.card h3 {
-
-    font-size: 28px;
-
-    margin: 15px;
-}
-
-.card p {
-
-    margin: 15px;
-
-    color: #ccc;
-
-    font-size: 18px;
-}
-
-.card button {
-
-    margin: 15px;
-
-    padding: 12px 20px;
-
-    border: none;
-
-    background-color: red;
-    color: white;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.card button:hover {
-    background-color: darkred;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-
-.hero h1 {
-
-    font-size: 50px;
-}
-
-.hero-description {
-
-    font-size: 16px;
-}
-
-.navbar {
-
-    padding: 20px;
-}
-
-.nav-links {
-
-    gap: 15px;
-} 
-
-   .navbar {
-
-        flex-direction: column;
-
-        padding: 20px;
-    }
-
-    .navbar ul {
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 15px;
-
-        margin-top: 15px;
-    }
-
-    .hero h2 {
-
-        font-size: 38px;
-    }
-
-    .hero p {
-
-        font-size: 16px;
-    }
-
-    .hero button {
-
-        width: 100%;
-
-        max-width: 250px;
-    }
-
-    .cars {
-
-        padding: 30px 15px;
-    }
-
-    .card {
-
-        width: 100%;
-
-        max-width: 350px;
-    }
-
-}
-
-
-.stats {
-
-    display: flex;
-
-    justify-content: space-around;
-
-    text-align: center;
-
-    padding: 50px 20px;
-
-    background: #1a1a1a;
-}
-
-.stats h2 {
-
-    color: red;
-
-    font-size: 40px;
-}
-
-.stats p {
-
-    color: #ccc;
-
-    margin-top: 10px;
-}
-
-
-
-/* ================= FOOTER ================= */
 
 .footer {
 
-    padding: 80px 20px;
-
-    background: #080808;
+    padding: 30px;
 
     text-align: center;
 
-    border-top:
-    1px solid rgba(255,255,255,0.08);
+    background: #111;
+
+    margin-top: 50px;
 }
 
 
-.footer-logo {
+@media (max-width: 768px) {
 
-    font-size: 40px;
+    .navbar {
 
-    letter-spacing: 4px;
+        flex-direction: column;
 
-    margin-bottom: 25px;
-}
-
-
-.footer-text {
-
-    max-width: 700px;
-
-    margin: auto;
-
-    color: #888;
-
-    line-height: 1.8;
-
-    margin-bottom: 40px;
-}
+        gap: 20px;
+    }
 
 
-.footer-links {
+    .hero h1 {
 
-    display: flex;
-
-    justify-content: center;
-
-    gap: 30px;
-
-    flex-wrap: wrap;
-
-    margin-bottom: 40px;
-}
+        font-size: 45px;
+    }
 
 
-.footer-links a {
+    .hero-buttons {
 
-    color: white;
+        flex-direction: column;
+    }
 
-    text-decoration: none;
-
-    transition: 0.3s;
-}
-
-
-.footer-links a:hover {
-
-    color: red;
-}
-
-
-.footer-copy {
-
-    color: #666;
-
-    font-size: 14px;
 }
